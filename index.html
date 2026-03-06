@@ -3,9 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Portfólio</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="header-active">Início</a></li>
+                <li><a href="#about" class="header-active">Sobre mim</a></li>
+                <li><a href="#skills" class="header-active">Minhas habilidades</a></li>
+                <li><a href="#projects" class="header-active">Meus projetos</a></li>
+                <li><a href="#contact" class="header-active">Meu contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-home" id="home">
+            <article class="article-home-message">
+                <h1 id="greetingHome"></h1>
+                <h2 id="myLettersAnimated"></h2>
+                <div class="div-home-btns">
+                    <a class="link-github" href="https://github.com/LucasHeiler24" target="_blank">Meu github</a>
+                    <a class="link-linkedin" href="https://www.linkedin.com/in/lucas-heiler-656318291/" target="_blank">Meu linkedin</a>
+                </div>
+            </article>
+            <article class="article-home-img">
+                <img src="./images/me.jpg" alt="Imagem minha animada" />
+            </article>
+        </section>
+        <section class="section-about" id="about">
+            <h1>Sobre mim</h1>
+            <article class="article-cards">
+                <div class="div-card">
+                    <div class="div-card-header">
+                        <img src="./images/study.jpg" />
+                    </div>
+                    <div class="div-card-body">
+                        <h1>Estudos</h1>
+                        <div class="separator"></div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, similique! Ut consequatur nemo quibusdam, nobis pariatur, magni quae quisquam voluptatum laboriosam cum temporibus, sapiente officiis illum voluptates facere necessitatibus error.</p>
+                    </div>
+                </div>
+                <div class="div-card">
+                    <div class="div-card-header">
+                        <img src="./images/professional.jpg" />
+                    </div>
+                    <div class="div-card-body">
+                        <h1>Profissional</h1>
+                        <div class="separator"></div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, similique! Ut consequatur nemo quibusdam, nobis pariatur, magni quae quisquam voluptatum laboriosam cum temporibus, sapiente officiis illum voluptates facere necessitatibus error.</p>
+                    </div>
+                </div>    
+                <div class="div-card">
+                    <div class="div-card-header">
+                        <img src="./images/hobby.jpg" />
+                    </div>
+                    <div class="div-card-body">
+                        <h1>Hobbies</h1>
+                        <div class="separator"></div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, similique! Ut consequatur nemo quibusdam, nobis pariatur, magni quae quisquam voluptatum laboriosam cum temporibus, sapiente officiis illum voluptates facere necessitatibus error.</p>
+                    </div>
+                </div>                
+            </article>
+        </section>
+        <section class="section-skills" id="skills">
+            <h1>Habilidades</h1>
+            <div class="div-skills-menu">
+                <h2 id="showLenguages">Linguagens</h2>
+                <h2 id="showFrameworks">Frameworks</h2>
+            </div>
+            <article class="article-skills-bars" id="skillsLenguages">
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>PHP</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barPHP"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Java</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barJava"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>JavaScript</h3>
+                        <p>85%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barJS"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Golang</h3>
+                        <p>60%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barGolang"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Linguagem C</h3>
+                        <p>70%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barC"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>SQL</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barSQL"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Kotlin</h3>
+                        <p>65%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barKotlin"></div>
+                </div>
+            </article>
+            <article class="article-skills-bars" id="skillsFrameworks">
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Laravel</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barLaravel"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>React</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barReact"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Next</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barNext"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Spring Boot</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barSB"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>ESP-IDF</h3>
+                        <p>60%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barESP"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Express</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barExpress"></div>
+                </div>
+                <div class="div-skills">
+                    <div class="div-skills-header">
+                        <h3>Nest</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="div-skills-bar" id="barNest"></div>
+                </div>
+            </article>
+        </section>
+        <section class="section-projects" id="projects">
+            <h1>Projetos</h1>
+            <article id="carrouselProjects"></article>
+        </section>
+        <section class="section-contact" id="contact">
+            <h1>Contato</h1>
+            <article class="article-contact-form">
+                <form action="https://formsubmit.co/lucasheilr09@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Nome..." required>
+                    <input type="email" name="email" placeholder="E-mail..." required>
+                    <textarea name="message" placeholder="Mensagem..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+            <article class="article-contact-profile">
+                <h1>Gostou do meu perfil?</h1>
+                <p>
+                    Siga-me nas minhas redes sociais a baixo e entre contato comigo no
+                    formulário ao lado.
+                </p>
+                <div class="div-contact-profile-btns">
+                    <a href="https://www.facebook.com/lucas.heiler.165/" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/lucas.heiler.165/" target="_blank">Instagram</a>
+                    <a class="link-github" href="https://github.com/LucasHeiler24" target="_blank">Meu github</a>
+                    <a class="link-linkedin" href="https://www.linkedin.com/in/lucas-heiler-656318291/" target="_blank">Meu linkedin</a>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
+
+    <script type="module" src="./js/index.js"></script>
 </html>

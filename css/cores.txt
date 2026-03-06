@@ -1,0 +1,12 @@
+Fundo principal:
+#EBD3F8
+#2E073F
+
+Texto Principal:
+#fff
+
+Botões e Destaques	
+#7A1CAC
+
+Hover / Estados Ativos
+#AD49E1	

@@ -1,3 +1,398 @@
-p{
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+body{
+    background: #2E073F;
+}
+
+header nav{
+    width: 100%;
+    padding: 40px;
+    background: #7A1CAC;
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    position: fixed;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-transform: uppercase;
     font-size: 20px;
+    transition: all ease-in-out 0.5s;  
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #AD49E1;
+}
+
+main {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.section-home{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.article-home-message,
+.article-home-img{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.article-home-img {
+    justify-content: center;
+    align-items: center;
+}
+
+.article-home-img img{
+    border-radius: 50%;
+    width: 500px;
+    cursor: pointer;
+    box-shadow: 10px 10px 50px 10px black;
+}
+
+#greetingHome{
+    font-size: 80px;
+}
+
+#myLettersAnimated{
+    font-size: 100px;
+    color: #EBD3F8;
+}
+
+.div-home-btns{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.link-linkedin,
+.link-github{
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.link-github{
+    background: #8E24AA;
+    transition: all ease-in-out 0.5s;
+}
+
+.link-github:hover{
+    background: #531366;
+}
+
+.link-linkedin{
+    background: #0e76a8;
+    transition: all ease-in-out 0.5s;
+}
+
+.link-linkedin:hover{
+    background: #094d6d;
+}
+
+.section-about{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-about h1,
+.section-skills h1,
+.section-projects h1,
+.section-contact h1 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.article-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.div-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #7A1CAC;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px 0 black;
+    cursor: pointer;
+}
+
+.div-card-header{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.div-card-header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px black;
+}
+
+.div-card-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.div-card-body h1{
+    font-size: 40px;
+    color: #EBD3F8;
+}
+
+.div-card-body p{
+    color: #fff;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.separator{
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    border-radius: 25pc;
+}
+
+.section-skills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.div-skills-menu {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.div-skills-menu h2{
+    cursor: pointer;
+}
+
+.article-skills-bars{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    gap: 10px;
+}
+
+.div-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.div-skills-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-skills-header p{
+    padding-top: 15px;
+}
+
+.div-skills-bar {
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    background: #7A1CAC; 
+    position: relative;
+}
+
+.show-skills{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+#barPHP::after{
+    content: '';
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barJava::after{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barJS::after{
+    content: '';
+    width: 85%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barGolang::after{
+    content: '';
+    width: 60%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barC::after{
+    content: '';
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barSQL::after{
+    content: '';
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8; 
+    position: absolute;
+}
+
+#barKotlin::after{
+    content: '';
+    width: 65%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barLaravel::after{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barReact::after{
+    content: '';
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barNext::after{
+    content: '';
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barSB::after{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barESP::after{
+    content: '';
+    width: 60%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barExpress::after{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+#barNest::after{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    background: #EBD3F8;
+    position: absolute;
+}
+
+.section-projects{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#carrouselProjects{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
 }
