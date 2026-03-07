@@ -1,13 +1,12 @@
-import { greeting, arrayMyFullName, activeHeader, arrayProjects, buildProjects } from "./helpers.js";
+import { arrayMyFullName, arrayProjects } from "./costants.js";
+import { greeting, buildProjects, buildNavItemProjects, addListenerItemsProjects } from "./helpers.js";
 
-window.onload = function(){
-    activeHeader(document.querySelectorAll('.header-active'))
-    
+window.onload = function(){    
     document.getElementById('greetingHome').textContent = `${greeting}, eu sou`.toLocaleUpperCase();
 
     window.addEventListener("scroll", () => {
         document.querySelector('header nav').style.background = (window.scrollY >= 100) ?  '#2E073F' : '#AD49E1'
-    })
+    });
     
     arrayMyFullName.forEach((letter, index) => {
         setTimeout(() => {
@@ -37,5 +36,8 @@ window.onload = function(){
     });
 
     const carrouselProjects = document.getElementById('carrouselProjects');
-    buildProjects(carrouselProjects);
+    const navItemProjects = document.getElementById('navItemProjects');
+    buildProjects(carrouselProjects, arrayProjects.slice(0, 3));
+    buildNavItemProjects(navItemProjects);
+    addListenerItemsProjects(carrouselProjects, document.querySelectorAll('.itemProject'));
 }
