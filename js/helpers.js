@@ -9,7 +9,7 @@ else greeting = "Boa noite";
 
 function buildProjects(htmlDiv, projects){
     htmlDiv.innerHTML = "";
-    projects.forEach((project, index) => {
+    projects.forEach((project) => {
         htmlDiv.innerHTML += `
             <div class="div-project">
                 <div class="div-project-header">

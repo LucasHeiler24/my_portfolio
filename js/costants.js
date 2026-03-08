@@ -35,7 +35,7 @@ export const arrayProjects =
     },
     {
         name: 'Jogo da velha',
-        description: `Esse projeto tem como objetivo, fazer um clássico jogo da velha interativo com JavaScript`,
+        description: `Esse projeto tem como objetivo, fazer um clássico jogo da velha interativo com JavaScript.`,
         img: './images/projectJogoDaVelha.png',
         url: 'https://github.com/LucasHeiler24/Algorithms',
         tools: 'JavaScript'

@@ -3,9 +3,30 @@ import { greeting, buildProjects, buildNavItemProjects, addListenerItemsProjects
 
 window.onload = function(){    
     document.getElementById('greetingHome').textContent = `${greeting}, eu sou`.toLocaleUpperCase();
+    
+    setTimeout(() => {
+        document.querySelector('.section-home').classList.add('show');
+    }, 500);
+
+    let showMenuMobile = false;
+    document.getElementById('showMenuMobile').addEventListener('click', () => {
+        document.getElementById('menuMobile').style.display =  (!showMenuMobile) ? 'flex' : 'none';
+        showMenuMobile = !showMenuMobile;
+    })
 
     window.addEventListener("scroll", () => {
-        document.querySelector('header nav').style.background = (window.scrollY >= 100) ?  '#2E073F' : '#AD49E1'
+        const heightPage = window.scrollY;
+        document.querySelector('header nav').style.background = (heightPage >= 100) ?  '#2E073F' : '#AD49E1';
+        document.querySelector('.mobile-menu').style.background = (heightPage >= 100) ?  '#2E073F' : '#AD49E1';
+        
+        if(heightPage >= 400)
+            document.querySelector('.section-about').classList.add('show');
+
+        if(heightPage >= 1200)
+            document.querySelector('.section-skills').classList.add('show');
+        
+        if(heightPage >= 1500)
+            document.querySelector('.section-projects').classList.add('show');
     });
     
     arrayMyFullName.forEach((letter, index) => {

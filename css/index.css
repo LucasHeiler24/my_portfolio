@@ -27,7 +27,7 @@ ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 ul li a {
@@ -42,7 +42,7 @@ a{
 }
 
 ul li a:hover{
-    color: #AD49E1;
+    color: #7A1CAC;
 }
 
 main {
@@ -61,6 +61,14 @@ main {
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.section-home.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .article-home-message,
@@ -69,6 +77,7 @@ main {
     flex-direction: column;
     flex: 1;
 }
+
 
 .article-home-img {
     justify-content: center;
@@ -80,6 +89,11 @@ main {
     width: 500px;
     cursor: pointer;
     box-shadow: 10px 10px 50px 10px black;
+    transition: all ease-in-out 0.3s;
+}
+
+.article-home-img img:hover{
+    filter: grayscale(100%);
 }
 
 #greetingHome{
@@ -130,6 +144,14 @@ main {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity ease-in 0.5s, transform ease-in 0.5s;
+}
+
+.section-about.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .section-about h1,
@@ -156,17 +178,23 @@ main {
     border-radius: 10px;
     box-shadow: 0 10px 40px 0 black;
     cursor: pointer;
+    transition: transform ease-in-out 0.5s;
+}
+
+.div-card:hover,
+.div-project:hover{
+    transform: scale(1.03);
 }
 
 .div-card-header{
     width: 100%;
-    height: 50%;
+    height: auto;
     border-radius: 10px;
 }
 
 .div-card-header img{
     width: 100%;
-    height: 100%;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0 10px 40px black;
 }
@@ -206,6 +234,14 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity ease-in 0.5s, transform ease-in 0.5s;
+}
+
+.section-skills.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .div-skills-menu {
@@ -394,19 +430,27 @@ main {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity ease-in 0.5s, transform ease-in 0.5s;
+}
+
+.section-projects.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #carrouselProjects{
     height: auto;
     display: flex;
-    overflow: hidden;
     gap: 20px;
 }
 
 .div-project{
-    width: 600px;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 10px 40px 0 black;
     height: auto;
     background: #7A1CAC;
     border-radius: 20px;
@@ -586,4 +630,203 @@ form button:hover{
 
 .link-instagram{
     background: #c50f09;
+}
+
+.hamburguer-menu,
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 1440px){
+    #greetingHome{
+        font-size: 50px;
+    }
+
+    #myLettersAnimated{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1024px){
+    .article-home-img img{
+        width: 350px;
+    } 
+
+    .article-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-card-header {
+        height: 500px;
+    }
+
+    .div-card-header img {
+        height: 500px;
+    }
+
+    #carrouselProjects{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div-contact-profile-btns{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    .section-home{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .article-home-message{
+        width: 100%;
+        display: flex;
+    }
+
+    .div-home-btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .div-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-contact-form{
+        width: 100%;
+    }
+
+    #skillsLenguages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #title1,
+    #title2,
+    #title3,
+    #title4{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 630px){
+    .div-card-header{
+        height: 400px;
+    }
+
+    .div-card-header img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 540px){
+    #greetingHome{
+        font-size: 22px;
+    }
+
+    #myLettersAnimated{
+        font-size: 45px;
+    }
+
+    #showLenguages,
+    #showFrameworks{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-menu{
+        display: none;
+    }
+
+    .hamburguer-menu {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+        margin-top: 100px;
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        background: #AD49E1;
+        position: fixed;
+        z-index: 1;
+        transition: all ease-in-out 0.5s;
+    }
+
+    .mobile-menu li{
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+    
+    .mobile-menu a {
+        color: white;
+     }
+
+    .article-home-message{
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    #myLettersAnimated{
+        font-size: 35px;
+    }
+
+    .section-contact{
+        padding: 5px;
+    }
+
+    .div-home-btns a {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .article-home-img{
+        justify-content: start;
+        align-items: start;
+    }
+    .article-home-img img{
+        width: 250px;
+    }
+    .div-card-header{
+        height: 300px;
+    }
+
+    .div-card-header img{
+        height: 300px;
+    }
+
+    .div-project-header{
+        height: 300px;
+    }
+
+    .div-project-header img{
+        height: 300px;
+    }
 }

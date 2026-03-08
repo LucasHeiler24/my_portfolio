@@ -10,14 +10,24 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="main-menu">
                 <li><a href="#home" class="header-active">Início</a></li>
                 <li><a href="#about" class="header-active">Sobre mim</a></li>
                 <li><a href="#skills" class="header-active">Minhas habilidades</a></li>
                 <li><a href="#projects" class="header-active">Meus projetos</a></li>
                 <li><a href="#contact" class="header-active">Meu contato</a></li>
             </ul>
+            <div class="hamburguer-menu">
+                <img src="./images/menu-hamburguer.png" id="showMenuMobile"/>
+            </div>
         </nav>
+        <div class="mobile-menu" id="menuMobile">
+            <li><a href="#home" class="header-active">Início</a></li>
+            <li><a href="#about" class="header-active">Sobre mim</a></li>
+            <li><a href="#skills" class="header-active">Minhas habilidades</a></li>
+            <li><a href="#projects" class="header-active">Meus projetos</a></li>
+            <li><a href="#contact" class="header-active">Meu contato</a></li>
+        </div>
     </header>
     <main>
         <section class="section-home" id="home">
@@ -34,7 +44,7 @@
             </article>
         </section>
         <section class="section-about" id="about">
-            <h1>Sobre mim</h1>
+            <h1 id="title1">Sobre mim</h1>
             <article class="article-cards">
                 <div class="div-card">
                     <div class="div-card-header">
@@ -88,7 +98,7 @@
             </article>
         </section>
         <section class="section-skills" id="skills">
-            <h1>Habilidades</h1>
+            <h1 id="title2">Habilidades</h1>
             <div class="div-skills-menu">
                 <h2 id="showLenguages">Linguagens</h2>
                 <h2 id="showFrameworks">Frameworks</h2>
@@ -197,12 +207,12 @@
             </article>
         </section>
         <section class="section-projects" id="projects">
-            <h1>Projetos</h1>
+            <h1 id="title3">Projetos</h1>
             <article id="carrouselProjects"></article>
             <div id="navItemProjects"></div>
         </section>
         <section class="section-contact" id="contact">
-            <h1>Contato</h1>
+            <h1 id="title4">Contato</h1>
             <div class="div-contact">
                 <article class="article-contact-form">
                     <h1>Formulário de contato</h1>
