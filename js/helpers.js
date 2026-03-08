@@ -21,7 +21,7 @@ function buildProjects(htmlDiv, projects){
                     <h2>Tecnologias: ${project.tools}</h2>
                 </div>
                 <div class="div-project-footer">
-                    <a href="${project.url}">Ver projeto</a>
+                    <a href="${project.url}" target="_blank">Ver projeto</a>
                 </div>
             </div>
         `;

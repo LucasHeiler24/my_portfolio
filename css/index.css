@@ -441,17 +441,21 @@ main {
 }
 
 #carrouselProjects{
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .div-project{
-    flex: 1;
+    width: 500px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 10px 40px 0 black;
-    height: auto;
     background: #7A1CAC;
     border-radius: 20px;
     cursor: pointer;
@@ -487,6 +491,7 @@ main {
 
 .div-project-footer{
     width: 100%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;

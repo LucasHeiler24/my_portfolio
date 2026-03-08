@@ -30,14 +30,14 @@ export const arrayProjects =
         Foi utilizado a API: PokéApi para construir um HUB de pokemons, onde o usuário consiga
         navegar, filtrar e ver detalhes sobre cada pokemon.`,
         img: './images/projectPokeDex.png',
-        url: 'https://github.com/LucasHeiler24/Algorithms',
+        url: 'https://github.com/LucasHeiler24/pokedex',
         tools: 'JavaScript'
     },
     {
         name: 'Jogo da velha',
         description: `Esse projeto tem como objetivo, fazer um clássico jogo da velha interativo com JavaScript.`,
         img: './images/projectJogoDaVelha.png',
-        url: 'https://github.com/LucasHeiler24/Algorithms',
+        url: 'https://github.com/LucasHeiler24/jogo_da_velha',
         tools: 'JavaScript'
     },
     {
@@ -46,7 +46,24 @@ export const arrayProjects =
         uma página com meus próprios componentes documentados e livres para uso.
         Utilizado Storybook para documentação.`,
         img: './images/projectStorybook.png',
-        url: 'https://github.com/LucasHeiler24/Algorithms',
+        url: 'https://github.com/LucasHeiler24/My_Store_Components',
         tools: 'React, Storybook'
+    },
+    {
+        name: 'Make Coin',
+        description: `Esse projeto tem como objetivo, ser uma aplicativo de gestão financeira pessoal, 
+        incluindo gráficos de análise, cadastro de receitas e despesas, e históricos. Esse foi o projeto integrador que
+        minha equipe composta pelos integrantes: Gustavo Adam, Gustavo Krüger, Lucas Heiler e Valdeci Novak.`,
+        img: './images/projectMakeCoin.png',
+        url: 'https://github.com/LucasHeiler24/Make-Coin-o-aplicativo-de-controle-financeiro',
+        tools: 'Kotlin'
+    },
+    {
+        name: 'Encurtador de URL',
+        description: `Esse projeto tem como objetivo, encurtar uma URL que o usuário informa, salvar em um
+        banco de dados, sendo utilizado o Postgres, e devolver uma URL encurtada.`,
+        img: './images/projectURL.jpg',
+        url: 'https://github.com/LucasHeiler24/encurtador_url',
+        tools: 'Node e Next'
     },
 ];
