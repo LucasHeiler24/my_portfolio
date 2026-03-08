@@ -718,7 +718,8 @@ form button:hover{
         width: 100%;
     }
 
-    #skillsLenguages{
+    #skillsLenguages,
+    #skillsFrameworks{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -757,6 +758,10 @@ form button:hover{
 }
 
 @media (max-width: 425px){
+    .div-project{
+        width: 100%;        
+    }
+
     header{
         display: flex;
         flex-direction: column;
@@ -782,6 +787,12 @@ form button:hover{
         position: fixed;
         z-index: 1;
         transition: all ease-in-out 0.5s;
+    }
+
+    #skillsLenguages,
+    #skillsFrameworks{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .mobile-menu li{
